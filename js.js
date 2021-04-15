@@ -19,6 +19,16 @@ function myClick3() {
     document.getElementById("Test1").innerHTML = text;
     function myText(value) {
         text = text + value + " ";
-        console.log(text);
+    }
+}
+
+//Array.map()
+function myClick4() {
+    let array = [1,11,111,23,45];
+    let array1 = array.map(myArray);
+    document.getElementById("Test2").innerHTML = array1;
+    function myArray(value) {
+        console.log(value);
+        return value + 2 + " ";
     }
 }
